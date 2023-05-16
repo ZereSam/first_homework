@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Данные с JSONPlaceholder</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  {% include 'navbar.html' %}
+
+  <h1>Данные с JSONPlaceholder</h1>
+  <ul>
+    {% for item in data %}
+      <li>{{ item.title }} - {{ item.completed }}</li>
+    {% endfor %}
+  </ul>
+
+  {% include 'footer.html' %}
+</body>
+</html>
